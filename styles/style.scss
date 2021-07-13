@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+html{
+    height: 100%;
+
+    body{
+        height: 100%;
+        background-color: bisque;
+    }
+}
+
+#top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: inherit;
+        padding-top: 7vmin;
+
+        #name-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 100vmin;
+                height: auto;
+            }
+        }
+    }
+
+    #contact{
+        width: 100%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 5vmin;
+        padding-bottom: 5vmin;
+
+        #links{
+            display: flex;
+            flex-direction: row;   
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 90%;
+
+            div{
+                width: 35vmin !important;
+                height: 18vmin !important;
+                padding: 1vmin;
+                border: 0.3vmin solid black;
+                margin: 1vmin;
+                transition: 0.3s;
+                width: fit-content;
+    
+                &:hover{
+                    box-shadow: 0.9vmin 0.9vmin 0vmin black;
+                    transform: scale(1.05);
+                }
+            }
+
+            @mixin a-tag {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: fit-content;
+                    text-decoration: none;
+                    background-color: white;
+                    border: 1px solid black;
+                    padding: 2vmin 4vmin 2vmin 4vmin;
+                    font-size: 3.5vmin;
+                    font-weight: bold;
+                    color: black;
+
+                    img{
+                        margin-right: 1.5vmin;
+                        width: 5vmin;
+                        height: auto;
+                    }
+                }
+            }
+
+            #github{
+                background-image: url("/images/devto.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include a-tag;
+            }
+            #devto{
+                background-image: url("/images/github.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include a-tag;
+            }
+            #linkedin{
+                background-image: url("/images/linkedin.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include a-tag;
+            }
+            #email{
+                background-image: url("/images/mail.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include a-tag;
+            }
+        }
+
+    }
+}
+
+#mid{
+    width: 100%;
+    height: auto;
+    padding: 0vmin 24vmin 24vmin 24vmin;
+    
+    #summary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1vmin solid black;
+        padding: 7vmin 15vmin 7vmin 15vmin;
+        text-align: justify;
+        background-color: lavender;
+        box-shadow: 1vmin 1vmin 0vmin black;
+
+        h1{
+            font-size: 5vmin;
+        }
+
+        p{
+            margin-top: 7vmin;
+            font-size: 3.5vmin;
+        }
+    }
+}
+
+// #bot{
+//     width: 100%;
+//     height: 65%;
+//     background-color: #63a583;
+// }
