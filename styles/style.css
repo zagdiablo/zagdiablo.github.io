@@ -300,41 +300,4 @@ html body {
   width: 5vmin;
   height: auto;
 }
-
-#mid {
-  width: 100%;
-  height: auto;
-  padding: 0vmin 24vmin 24vmin 24vmin;
-}
-
-#mid #summary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1vmin solid black;
-  padding: 7vmin 15vmin 7vmin 15vmin;
-  text-align: justify;
-  background-color: lavender;
-  -webkit-box-shadow: 1vmin 1vmin 0vmin black;
-          box-shadow: 1vmin 1vmin 0vmin black;
-}
-
-#mid #summary h1 {
-  font-size: 5vmin;
-}
-
-#mid #summary p {
-  margin-top: 7vmin;
-  font-size: 3.5vmin;
-}
 /*# sourceMappingURL=style.css.map */

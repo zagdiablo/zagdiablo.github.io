@@ -131,32 +131,11 @@ html{
     }
 }
 
-#mid{
-    width: 100%;
-    height: auto;
-    padding: 0vmin 24vmin 24vmin 24vmin;
-    
-    #summary{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1vmin solid black;
-        padding: 7vmin 15vmin 7vmin 15vmin;
-        text-align: justify;
-        background-color: lavender;
-        box-shadow: 1vmin 1vmin 0vmin black;
-
-        h1{
-            font-size: 5vmin;
-        }
-
-        p{
-            margin-top: 7vmin;
-            font-size: 3.5vmin;
-        }
-    }
-}
+// #mid{
+//     width: 100%;
+//     height: auto;
+//     padding: 0vmin 24vmin 24vmin 24vmin;
+// }
 
 // #bot{
 //     width: 100%;
